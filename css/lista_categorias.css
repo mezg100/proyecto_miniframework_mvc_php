@@ -1,0 +1,49 @@
+
+body{
+    background: #525252;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.lista{
+    width: 500px;
+    margin:auto;
+    margin-top: 20px;
+    text-transform: uppercase;
+    
+}
+
+h1{
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    height: 150px;
+    text-transform: uppercase;
+
+}
+
+ul{
+    border:1px solid black;
+}
+
+li{
+    text-align:center;
+    font-weight: bold;
+    border:1px solid black !important;
+    
+    
+}
+
+.badge{
+    height: 30px;
+    width: 30px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: red;
+    color:white;
+    font-size: 16px;
+}

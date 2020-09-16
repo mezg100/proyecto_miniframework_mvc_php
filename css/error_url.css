@@ -1,0 +1,14 @@
+.fondo{
+ background-color:#1d3557;
+}
+.mensaje{
+    width: 1200px;
+    display:block;
+    margin:auto;
+    margin-top: 400px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    color: red;
+   
+}

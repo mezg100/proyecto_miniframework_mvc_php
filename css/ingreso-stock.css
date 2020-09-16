@@ -1,0 +1,131 @@
+
+body{
+    background-image: url(../css/fondo2.jpg);
+}
+
+.formulario{
+    width: 540px;
+    height: 470px;
+    border:2px solid black;
+    margin: auto;
+    padding: 20px;
+    margin-top: 100px;
+    background: rgb(8, 40, 82);
+    border-radius: 4px;
+    border:2px solid white;
+}
+
+.formulario2{
+    margin-top: 200px;
+}
+
+.form-control2{
+    color:black;
+    font-weight: bold;
+    height: 60px;
+}
+.form-label2{
+    display:block;
+    text-align: center;
+    padding: 14px;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-family: 'Concert One', cursive;
+    color: white;
+    text-shadow: 3px 3px 3px black; 
+}
+
+
+.titulo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    height: 100px;
+    font-family: 'Concert One', cursive;
+    text-shadow: 3px 3px 3px black;
+    background-color: #29448f;
+    box-shadow: 2px 2px 2px  white;
+}
+
+.form-control{
+    width: 500px;
+    margin:auto;
+    margin-top: 5px;
+    text-align: center;
+    border:2px solid black;
+    text-transform: uppercase;
+    
+}
+
+.form-cantidad{
+    width: 350px;
+    margin:auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-label{
+    display:block;
+    text-align: center;
+    padding: 14px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: 'Concert One', cursive;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+::placeholder{
+    font-weight: bold;
+}
+select{
+    text-align-last: center;
+    font-weight: bold;
+    margin-top: 10px !important;
+}
+
+.btn{
+    display:block !important;
+    margin-top: 31px !important;
+    width:400px !important;
+    margin:auto;
+    height: 75px;
+    font-size: 14px;
+    border-radius: 5px;
+    border:2px solid black;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    font-family: 'Concert One', cursive;
+    font-size: 25px;
+}
+
+.boton2{
+    display:block !important;
+    margin-top: 61px !important;
+    width:500px !important;
+    margin:auto;
+    height: 75px;
+    font-size: 14px;
+    border-radius: 5px;
+    border:2px solid black;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    font-family: 'Concert One', cursive;
+    font-size: 25px;
+}
+
+.error{
+    display:flex !important;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    height: 120px;
+    font-family: 'Concert One', cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}

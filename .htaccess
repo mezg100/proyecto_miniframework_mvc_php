@@ -1,0 +1,23 @@
+
+RewriteEngine on
+
+RewriteRule ^controllers(.*)$ controllers/url_equivocada.php [END]
+
+RewriteRule ^listado-categorias$ controllers/listado_categorias.php [END]
+
+RewriteRule ^productos-categoria-([0-9]+)$ controllers/listado_productos.php?categoria_id=$1 [END]
+
+RewriteRule ^alta-producto$ controllers/alta_producto.php [END]
+
+RewriteRule ^eliminar-producto-([0-9]+)$ controllers/eliminar_producto.php?id=$1 [END]
+
+RewriteRule ^ingreso-stock$ controllers/ingreso_stock.php [END]
+
+RewriteRule ^modificar-producto-([0-9]+)$ controllers/modificar_producto.php?id=$1 [END]
+
+RewriteRule ^buscador$ controllers/buscador.php [END]
+
+RewriteRule ^home$ controllers/home.php [END]
+
+RewriteRule ^logout$ controllers/logout.php [END]
+

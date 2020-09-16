@@ -1,0 +1,27 @@
+.fondo{
+ background-color:#1d3557;
+}
+.mensaje{
+    width: 1200px;
+    display:block;
+    margin:auto;
+    margin-top: 400px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    
+   
+}
+
+.btn-danger{
+    display:flex !important;
+    width: 200px !important;
+    height: 60px !important;
+    margin:auto;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold !important;
+    margin-right: 150px !important;
+    
+}

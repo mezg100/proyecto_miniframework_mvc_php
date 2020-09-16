@@ -1,0 +1,46 @@
+body{
+    background-image:url(fondo.jpg);
+}
+
+.main-form{
+    width:370px;
+    height: 400px;
+    margin:auto;
+    margin-top: 220px;
+    border:2px solid white;
+    border-radius: 3px;
+    padding:15px;
+    background-color: #002642;
+}
+
+.form-label{
+    display:block;
+    font-size:13px;
+    text-align:left;
+    margin-top: 15px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.form-input{
+    width: 200px;
+    margin:auto;
+    margin-top: 15px;
+    border:2px solid red;
+}
+
+.form-submit{
+    display:block;
+    margin:auto;
+    margin-top: 25px;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+::placeholder{
+    text-align:center;
+    font-size:14px;
+}
+

@@ -1,0 +1,85 @@
+body{
+    background: #343A40;  /* fallback for old browsers */
+    
+}
+
+h1{
+    display:flex;
+    height: 150px;
+    justify-content:center;
+    align-items:center;
+    text-transform: uppercase;
+    color:white;
+}
+
+.alert{
+    width:400px;
+    margin:auto;
+    font-weight: bold;
+    
+
+}
+
+.tabla{
+    width: 75%;
+    margin:auto;
+    margin-top: 50px;
+    text-align: center;
+    border:2px solid white !important;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+
+table,thead,td,th{
+    border:2px solid white !important;
+}
+
+.btn-volver{
+    margin-top: 50px;
+    margin-right: 40px;
+    width: 200px;
+    height: 80px;
+    border-radius: 3px;
+    color:white;
+    font-weight: bold;
+    border:2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.barra{
+    display:block !important;
+    width: 400px;
+    margin:auto;
+    margin-top: 45px;
+    border:2px solid black;
+    text-transform: uppercase;
+    
+    
+}
+
+.submit{
+    width: 200px;
+    display: block;
+    margin:auto;
+    margin-right: 300px;
+    position:relative;
+    top:-38px;
+    border:2px solid black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.volver{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    width: 400px;
+    margin-top: 50px;
+    font-weight: bold;
+    height: 50px;
+    border:1px solid black;
+}

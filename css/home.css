@@ -1,0 +1,26 @@
+body{background-color: #8B939C !important;}
+
+.user{
+    padding-left: 10pt;
+    color: white;
+    font-weight: bold;
+
+}
+
+.table a{
+    font-weight: bold;
+}
+
+table,thead,td,th{
+    border:2px solid white !important;
+}
+
+.table{
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border: 2px solid white !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}

@@ -56,7 +56,7 @@
 		  }?>
 
 
-<!--	<a href="listado-categorias" class="float-right btn btn-danger btn-volver">Volver</a> -->
+	<a href="listado-categorias" class=" btn btn-danger ">Volver</a> 
 
 
 

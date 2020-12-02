@@ -34,7 +34,8 @@
 	
 	 <input type="submit" value="Agregar Producto" class="btn-submit bg-info" />
 
+
 </form>
-    
+    	 <a href="home" class=" btn btn-danger ">Volver</a>
 </body>
 </html>

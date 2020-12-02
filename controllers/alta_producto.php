@@ -9,7 +9,7 @@ require '../views/altaproducto.php';
 require '../views/resultado.php';
 
 
-Login::loginTrue();
+//Login::loginTrue();
 
 	if(count($_POST) > 0 ){
 		if( !isset($_POST['categoria'])) die("Error1-Insertarproducto");

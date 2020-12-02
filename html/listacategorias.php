@@ -31,6 +31,7 @@
 	      	<p> No existen categorias disponibles </p>
 	<?php } ?>
 
+		 <a href="home" class=" btn btn-danger ">Volver</a>
 
 </body>
 </html>

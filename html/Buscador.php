@@ -81,7 +81,9 @@
 				</tr>
 			<?php } ?> 
 		</table>
-		<?php } ?>	 
+			    <a href="home" class=" btn btn-danger ">Volver</a>
+		<?php } ?>
+
 </body>
 	<?php } ?>		 
 </html>

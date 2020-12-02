@@ -4,23 +4,26 @@
 <html lang="es">
 	
 	<head>
-		<title>Home</title>
-		<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/home.css">
 	</head>
 
 <body>
 
-		<p>Bienvenido <?=$this->nombre_usuario?></p>
+		<p class="user">Usuario: <?=$this->nombre_usuario?></p>
 
-		<table>
-			<tr>
-				<td><a href="listado-categorias">Categorias</a></td>
-				<td><a href="alta-producto">Alta producto</a></td>
-				<td><a href="ingreso-stock">Ingreso stock</a></td>
-				<td><a href="buscador">Buscador</a></td>
-				<td><a href="logout">cerrar sesion</a></td>
+		<table class="table table-hover table-dark table-bordered " >
+			<tr class="bg-danger">
+				<th><a href="listado-categorias" class="btn btn-danger">Categorias</a></th>
+				<th><a href="alta-producto" class="btn btn-danger">Alta producto</a></th>
+				<th><a href="ingreso-stock" class="btn btn-danger">Ingreso stock</a></th>
+				<th><a href="buscador" class="btn btn-danger">Buscador</a></th>
+				<th><a href="logout" class="btn btn-danger">cerrar sesion</a></th>
 			</tr>
 		</table>
+
 
  
 </body>

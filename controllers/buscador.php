@@ -7,7 +7,7 @@ require '../models/Productos.php';
 require '../views/Buscador.php';
 
 
-Login::loginTrue();
+//Login::loginTrue();
 
 $productos = new Productos();
 $todos = $productos->ObtenerTodos();

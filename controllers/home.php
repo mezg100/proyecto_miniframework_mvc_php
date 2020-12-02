@@ -7,7 +7,7 @@ require '../views/form_login.php';
 require '../views/home.php';
 require '../views/resultado.php';
 
-
+/*
 if( count($_POST) > 0){
 	if( !isset($_POST['email']))die("error1");
 	if( !isset($_POST['password']))die("error2");
@@ -34,11 +34,11 @@ if( !isset($_SESSION['logueado']) && !count($_POST) > 0 ){
 }
 
 if( isset($_SESSION['logueado']) && !count($_POST) > 0 ){
-	$vista_home = new home();
-	$vista_home->nombre_usuario = $_SESSION['nombre'];
-	$vista_home->render();
+*/	$vista_home = new home();
+//	$vista_home->nombre_usuario = $_SESSION['nombre'];
+	$vista_home->render();/*
 }
 
-
+*/
 
 ?>

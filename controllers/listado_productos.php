@@ -7,7 +7,7 @@ require '../models/Productos.php';
 require '../models/Categoria.php';
 require '../views/listaproductos_categoria.php';
 
-Login::loginTrue();
+//Login::loginTrue();
 
 	if( isset($_GET['categoria_id'])){
 		$producto = new Productos();

@@ -3,6 +3,7 @@ body{
   background-image: url(../css/fondo.png);
 }
 
+
 h1{
     display:flex;
     font-family: 'Concert One', cursive;
@@ -114,6 +115,16 @@ option{
     text-shadow: 2px 2px 2px black;
     text-transform: uppercase;
 }
+
+#mensaje{
+    color: red;
+    display:block;
+    margin:auto;
+    height: 32px;
+    margin-top: 18px;
+}
+
+
 
 
 

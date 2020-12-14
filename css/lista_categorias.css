@@ -47,3 +47,6 @@ li{
     color:white;
     font-size: 16px;
 }
+
+.list-group-item:hover{
+    background-color: #E6B0AA;

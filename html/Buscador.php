@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/tabla_productos.css">
+    <script defer type="text/javascript" src="js/buscador.js"></script>
     <title>Buscador</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
    <?php if($this->productos){?>
 
 	<h1 class="h1 text-center bg-success">Resultados de la Busqueda</h1>
+	
+	<form action="" method="POST" id="form-buscador2" >
 
-	<form action="" method="POST">
-
-		<input type="text" name="busqueda" placeholder="Realizar otra Busqueda.." class="form-control barra">
+		<input type="text" name="busqueda" id="busqueda2" placeholder="Realizar otra Busqueda.." class="form-control barra">
 		<input type="submit" value="buscar" class="btn btn-success submit">
    </form>
 
@@ -58,9 +59,9 @@
 
 <?php if(!isset($_POST['busqueda'])){?>
 
-
-	<form action="" method="POST">
-		<input type="text" name="busqueda" placeholder="ingrese su busqueda.." class="form-control barra">
+<p id="mensaje"></p>
+	<form action="" method="POST" id="form-buscador" >
+		<input type="text" name="busqueda" id="busqueda" placeholder="ingrese su busqueda.." class="form-control barra">
 		<input type="submit" value="buscar" class="btn btn-success submit">
 	
 	</form>

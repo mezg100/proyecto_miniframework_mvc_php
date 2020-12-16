@@ -124,7 +124,9 @@ option{
     margin-top: 18px;
 }
 
-
+.input-form:focus{
+    background-color: #E6B0AA
+}
 
 
 

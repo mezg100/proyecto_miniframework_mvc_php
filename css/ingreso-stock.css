@@ -129,3 +129,30 @@ select{
     text-transform: uppercase;
 
 }
+
+#mensaje{
+    color: red;
+    display: block;
+    margin:auto;
+    height: 32px;
+    margin-top: 20px;
+}
+
+.btn-volver{
+    display:block !important;
+    margin-top: 50px !important;
+    margin-left: 50px !important;
+    width:120px !important;
+    margin:auto;
+    height: 65px;
+    border-radius: 5px;
+    border:2px solid black;
+    color:white;
+    font-size: 25px;
+}
+
+.form-cantidad:focus{
+    background-color: #E6B0AA;
+
+}
+

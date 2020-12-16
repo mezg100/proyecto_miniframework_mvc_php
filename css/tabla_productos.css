@@ -83,3 +83,19 @@ table,thead,td,th{
     height: 50px;
     border:1px solid black;
 }
+
+#mensaje{
+    color: red;
+    display: block;
+    height: 32px;
+    margin-top: 20px;
+    width: 350px;
+}
+#mensaje2{
+    color: white;
+    display: block;
+    height: 32px;
+    margin-top: 20px;
+    width: 350px;
+}
+

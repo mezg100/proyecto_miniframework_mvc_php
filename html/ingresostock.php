@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/ingreso-stock.css">
 		<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+		<script defer type="text/javascript" src="js/ingresostock.js"> </script>
 	</head>
 
 <body>
@@ -32,11 +33,14 @@
 
 			if( $this->productos ){ ?>
 				<p class="h1 text-center text-white  titulo border-bottom">Seleccione un producto de la categoria <?= $this->categoria_selec['nombre'] ?> e ingrese la cantidad </p>
-				<form action="" method="post" class="formulario" >
+				<form action="" method="post" class="formulario" id="form-ingreso-stock" >
+					<label id="mensaje"></label>
+					<br/>
 					<label for="producto" class="form-label">Producto</label>
-					<select name="producto_id" id="producto" class="form-control ">
+					<select name="producto_id" id="producto" class="form-control form-cantidad" >
 						<?php foreach($this->productos as $producto ){ ?>
-							<option value="<?= $producto['producto_id'] ?>"> <?=$producto['nombre']?>
+							<option value="<?= $producto['producto_id'] ?>">
+							 <?=$producto['nombre']?>
 							 --Codigo: <?=$producto['producto_id'] ?> --Stock <?=$producto['stock']?>
 							</option>
 						<?php } ?> 
@@ -56,9 +60,7 @@
 		  }?>
 
 
-	<a href="listado-categorias" class=" btn btn-danger ">Volver</a> 
-
-
+	<a href="home" class=" btn btn-danger btn-volver">Volver</a> 
 
 </body>
 </html>

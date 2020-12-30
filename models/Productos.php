@@ -80,6 +80,8 @@ class Productos extends Model{
     if(!is_numeric($precio)) throw new validacionException("Error14-Productos");
     if($precio<0) throw new validacionException("Error15-Productos");
     if( !is_null($this->BuscarProductoId($producto_id))) {
+            $aux = $this->BuscarProductoId($producto_id);
+            if($aux['nombre'] == $nombre && $aux['precio'] == $precio){ return false;}
             $this->db->query("UPDATE producto
             SET nombre ='$nombre',
             precio=$precio 

@@ -6,19 +6,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/tabla_productos.css">
     <script defer type="text/javascript" src="js/buscador.js"></script>
+    <script defer type="text/javascript" src="js/eliminar.js"></script>
     <title>Buscador</title>
 </head>
 <body>
-
+	
+<p id="mensaje"></p>
 <?php if(isset($_POST['busqueda'])){?>
 
    <?php if($this->productos){?>
 
 	<h1 class="h1 text-center bg-success">Resultados de la Busqueda</h1>
 	
-	<form action="" method="POST" id="form-buscador2" >
+	<form action="" method="POST" id="buscador-results" >
 
-		<input type="text" name="busqueda" id="busqueda2" placeholder="Realizar otra Busqueda.." class="form-control barra">
+		<input type="text" name="busqueda" id="busqueda-results" placeholder="Realizar otra Busqueda.." class="form-control barra">
 		<input type="submit" value="buscar" class="btn btn-success submit">
    </form>
 
@@ -33,7 +35,7 @@
 			 <?php foreach( $this->productos as $producto ){ ?>
 				<tr>
 				 <td><?= $producto['nombre'] ?></td> <td><?= $producto['precio'] ?></td><td><?= $producto['stock'] ?>
-				 <td><a href="eliminar-producto-<?=$producto['producto_id']?>" class="btn btn-danger">Eliminar</a></td>
+				 <td><a href="eliminar-producto-<?=$producto['producto_id']?>" class="btn btn-danger eliminar">Eliminar</a></td>
 				 <td><a href="modificar-producto-<?=$producto['producto_id']?>" class="btn btn-warning">Modificar</a></td>
 				</tr>
 			<?php } ?> 
@@ -44,9 +46,9 @@
                <h1 class="h1 bg-danger">Sin Resultados</h1>
 			   
 			   
-		<form action="" method="POST">
+		<form action="" method="POST" id="buscador-no-results">
 
-           <input type="text" name="busqueda" placeholder="Buscar de nuevo.." class="form-control barra">
+           <input type="text" name="busqueda" id="busqueda-no-results"placeholder="Buscar de nuevo.." class="form-control barra">
            <input type="submit" value="buscar" class="btn btn-success submit">
          </form>
 
@@ -59,7 +61,6 @@
 
 <?php if(!isset($_POST['busqueda'])){?>
 
-<p id="mensaje"></p>
 	<form action="" method="POST" id="form-buscador" >
 		<input type="text" name="busqueda" id="busqueda" placeholder="ingrese su busqueda.." class="form-control barra">
 		<input type="submit" value="buscar" class="btn btn-success submit">
@@ -77,7 +78,7 @@
 			 <?php foreach( $this->productos as $producto ){ ?>
 				<tr>
 					<td><?= $producto['nombre'] ?></td> <td><?= $producto['precio'] ?></td><td><?= $producto['stock'] ?>
-					<td><a href="eliminar-producto-<?=$producto['producto_id']?>" class="btn btn-danger">Eliminar</a></td>
+					<td><a href="eliminar-producto-<?=$producto['producto_id']?>" class="btn btn-danger eliminar">Eliminar</a></td>
 					<td><a href="modificar-producto-<?=$producto['producto_id']?>" class="btn btn-warning">Modificar</a></td>
 				</tr>
 			<?php } ?> 

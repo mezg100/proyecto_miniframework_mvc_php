@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/tabla_productos.css">
+		<script defer type="text/javascript" src="js/eliminar.js"></script>
 	</head>
 
 <body>
@@ -25,7 +26,7 @@
 			 <?php foreach( $this->productos as $producto ){ ?>
 				<tr>
 				 <td><?= $producto['nombre'] ?></td> <td><?= $producto['precio'] ?></td><td><?= $producto['stock'] ?>
-				 <td><a href="eliminar-producto-<?=$producto['producto_id']?>" class="btn btn-danger">Eliminar</a></td>
+				 <td><a href="eliminar-producto-<?=$producto['producto_id']?>" class="btn btn-danger eliminar">Eliminar</a></td>
 				 <td><a href="modificar-producto-<?=$producto['producto_id']?>" class="btn btn-warning">Modificar</a></td>
 				</tr>
 			<?php } ?>

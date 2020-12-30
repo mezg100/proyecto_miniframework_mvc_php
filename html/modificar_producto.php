@@ -7,12 +7,15 @@
 	<link rel="stylesheet" href="css/modificar_producto.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/modificar_producto.js"></script>
 </head>
 <body>
 
-<h1 class="bg-warning">Modificar Producto</h1>
 
-<form action="" method="POST" class="main-form">
+<h1 class="bg-warning">Modificar Producto</h1>
+<p id="mensaje"></p>
+
+<form action="" method="POST" class="main-form" id="form">
 
 	 <div class="from-group">
 	 <label for="producto" class="form-label">NOMBRE</label>

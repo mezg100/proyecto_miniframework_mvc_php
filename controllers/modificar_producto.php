@@ -6,7 +6,7 @@
   require '../views/modificar_producto.php';
   require '../views/resultado.php';
 
-  //Login::loginTrue();
+  Login::loginTrue();
 
    if( isset($_GET['id'])){
    		$producto = new Productos();

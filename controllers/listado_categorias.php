@@ -7,7 +7,7 @@ require '../models/Categoria.php';
 require '../models/Productos.php';
 require '../views/listacategorias.php';
 
-//Login::loginTrue();
+Login::loginTrue();
 
 $categoria = new Categoria();
 $list_categorias = $categoria->getCategorias();

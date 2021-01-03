@@ -9,7 +9,7 @@ require '../models/Stock.php';
 require '../views/ingresostock.php';
 require '../views/resultado.php';
 
-//Login::loginTrue();
+Login::loginTrue();
 
 $vista = new ingresostock();
 $categoria = new Categoria();

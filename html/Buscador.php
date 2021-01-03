@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 			</tr>
 			 <?php foreach( $this->productos as $producto ){ ?>
 				<tr>
-				 <td><?= $producto['nombre'] ?></td> <td><?= $producto['precio'] ?></td><td><?= $producto['stock'] ?>
+				 <td><?= $producto['nombre'] ?></td> <td>$<?= $producto['precio'] ?></td><td><?= $producto['stock'] ?>
 				 <td><a href="eliminar-producto-<?=$producto['producto_id']?>" class="btn btn-danger eliminar">Eliminar</a></td>
 				 <td><a href="modificar-producto-<?=$producto['producto_id']?>" class="btn btn-warning">Modificar</a></td>
 				</tr>
@@ -77,7 +77,7 @@
 			</tr>
 			 <?php foreach( $this->productos as $producto ){ ?>
 				<tr>
-					<td><?= $producto['nombre'] ?></td> <td><?= $producto['precio'] ?></td><td><?= $producto['stock'] ?>
+					<td><?= $producto['nombre'] ?></td> <td>$<?= $producto['precio'] ?></td><td><?= $producto['stock'] ?>
 					<td><a href="eliminar-producto-<?=$producto['producto_id']?>" class="btn btn-danger eliminar">Eliminar</a></td>
 					<td><a href="modificar-producto-<?=$producto['producto_id']?>" class="btn btn-warning">Modificar</a></td>
 				</tr>
